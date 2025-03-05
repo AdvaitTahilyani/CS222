@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import ConfirmationNumberIcon from '@mui/icons-material/ConfirmationNumber';
+import PersonIcon from '@mui/icons-material/Person';
 
 const Header: React.FC = () => {
   return (
@@ -47,10 +48,23 @@ const Header: React.FC = () => {
             color="inherit"
             component={RouterLink}
             to="/create-ticket"
-            variant="outlined"
-            sx={{ borderColor: 'white' }}
+            sx={{ mr: 2 }}
           >
             Sell Tickets
+          </Button>
+          <Button
+            color="inherit"
+            startIcon={<PersonIcon />}
+            variant="outlined"
+            sx={{ 
+              borderColor: 'white',
+              '&:hover': {
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                borderColor: 'white'
+              }
+            }}
+          >
+            Login
           </Button>
         </Box>
       </Toolbar>
