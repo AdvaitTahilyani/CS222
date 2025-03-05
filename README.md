@@ -28,7 +28,7 @@ A web application for students to buy and sell tickets to campus events, concert
 ## Project Structure
 
 ```
-ticket-marketplace/
+CS222/
 ├── backend/                # Flask backend
 │   ├── app/                # Application package
 │   │   ├── models.py       # Database models
@@ -68,7 +68,7 @@ ticket-marketplace/
 
 2. Navigate to the backend directory:
    ```bash
-   cd ticket-marketplace/backend
+   cd backend
    ```
 
 3. Install dependencies:
@@ -94,7 +94,7 @@ The backend API will be available at http://localhost:5000.
 
 1. Navigate to the frontend directory:
    ```bash
-   cd ticket-marketplace/frontend
+   cd ../frontend
    ```
 
 2. Install dependencies:
